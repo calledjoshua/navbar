@@ -1,0 +1,39 @@
+nav {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+}
+ul {
+    padding: 27px 0px 0px 150px;
+    list-style: none;
+}
+nav img {
+    float: left;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+li {
+    display: inline;
+
+    padding: 0px 10px 0px 10px;
+}
+li a {
+    padding: 10px 10px 10px 10px;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+
+    text-decoration: none;
+
+    color: #ccc;
+}
+li a:hover {
+    cursor: pointer;
+
+    color: #fff;
+}
+.active {
+    color: #fff;
+}

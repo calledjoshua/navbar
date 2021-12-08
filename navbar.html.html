@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jOsh#8847</title>
+    <link rel="icon" href="youricon.png"  type="image/png">
+
+    <link rel="stylesheet" href="assets/nav-menu.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="nav-menu.css">
+
+    <style>
+
+        body {
+            background: #000
+        }
+        /* Mobile */
+        #mobile {
+            z-index: 99;
+            
+            display: none;
+
+            position: fixed;
+            bottom: 0;
+            height: 100px;
+            width: 100%;
+
+            background: #000;
+        }
+        #mobile ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 10px;
+            margin-left: -150px;
+        }
+        #mobile li {
+            padding: 0px 25px 0px 25px;
+            display: inline;
+        }
+        #mobile li a {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 21px;
+
+            text-decoration: none;
+
+            color: #ccc;
+        }
+        #mobile li a:hover {
+            cursor: pointer;
+
+            border: none;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+        }
+        /* Mobile */
+
+        @media screen and (max-width: 550px) {
+            nav {
+                display: none;
+            }
+            #mobile {
+                display: block;
+            }
+            #mobile img {
+                position: fixed;
+                top: 35px;
+                left: 35px;
+            }
+            #information  h1 {
+                bottom: 325px;
+                left: 35px;
+            }
+            #information p {
+                bottom: 250px;
+                left: 35px;
+            }
+            button {
+                bottom: 180px;
+                left: 35px;
+            }
+        }
+	</style>
+	
+</head>
+<body>
+
+    <nav>
+        <a href="https://yourwebsite.com"><img src="yourlogo.png" alt="Logo" width="150px"></a>
+        <ul>
+            <li><a class="active" href="https://yourwebsite.com">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="playlists.html">Playlists</a></li>
+            <li><a href="mailto:contact@business.ivoryclothing@gmail.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="mobile">
+        <a href="https://yourwebsite.com"><img src="yourlogo.png" alt="Logo" width="70px"></a>
+        <ul>
+            <li><a class="active" href="https://yourwebsite.com">Home</a></li>
+            <li><a class="projects" href="projects">Projects</a></li>
+            <li><a class="playlists" href="playlists">Playlists</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
